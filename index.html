@@ -1,0 +1,538 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Shubham Powar | Python Full-Stack Developer</title>
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" />
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+  <link rel="stylesheet" href="./style.css" />
+</head>
+<body>
+
+  <div id="loader">
+    <div class="loader-ring"></div>
+    <h2 class="loader-text">Shubham Portfolio</h2>
+  </div>
+
+  <div class="bg-blur blur-1"></div>
+  <div class="bg-blur blur-2"></div>
+  <div class="bg-blur blur-3"></div>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg fixed-top custom-navbar" id="mainNav">
+    <div class="container">
+      <a class="navbar-brand logo-text" href="#home"><span>Shubham</span>X</a>
+
+      <button
+        class="navbar-toggler custom-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#mainNavbar"
+        aria-controls="mainNavbar"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <i class="fa-solid fa-bars-staggered"></i>
+      </button>
+
+      <div class="collapse navbar-collapse" id="mainNavbar">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0 nav-center">
+          <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+          <li class="nav-item"><a class="nav-link" href="#about">About</a></li>
+          <li class="nav-item"><a class="nav-link" href="#skills">Skills</a></li>
+          <li class="nav-item"><a class="nav-link" href="#projects">Projects</a></li>
+          <li class="nav-item"><a class="nav-link" href="#services">Services</a></li>
+          <li class="nav-item"><a class="nav-link" href="#experience">Experience</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+
+        <a href="#contact" class="btn custom-btn ms-lg-3 mt-3 mt-lg-0">Hire Me</a>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero -->
+  <section id="home" class="hero-section">
+    <div class="container">
+      <div class="row align-items-center min-vh-100 gy-5">
+        <div class="col-lg-7" data-aos="fade-right">
+          <p class="small-tag">HELLO, MY NAME IS</p>
+          <h1 class="hero-title">Shubham <span>Powar</span></h1>
+          <h2 class="hero-subtitle">I'm a <span id="typing-text"></span></h2>
+          <p class="hero-desc">
+            I build responsive web applications using Python, Django, JavaScript,
+            Bootstrap, and MySQL. I focus on clean UI, practical backend logic,
+            and real-world solutions for businesses.
+          </p>
+
+          <div class="hero-buttons d-flex flex-wrap gap-3 mt-4">
+            <a href="#projects" class="btn custom-btn">View Projects</a>
+            <a href="resume.pdf" class="btn outline-btn" download>Download Resume</a>
+          </div>
+
+          <div class="hero-stats row mt-5 g-3">
+            <div class="col-6 col-md-4">
+              <div class="glass-card stat-card">
+                <h3>1+</h3>
+                <p>Year Experience</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="glass-card stat-card">
+                <h3>5+</h3>
+                <p>Projects Built</p>
+              </div>
+            </div>
+            <div class="col-6 col-md-4">
+              <div class="glass-card stat-card">
+                <h3>100%</h3>
+                <p>Dedication</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-5" data-aos="fade-left">
+          <div class="hero-image-wrapper">
+            <div class="hero-image-card glass-card">
+              <img src="images/profile.jpeg" alt="Shubham Powar" class="img-fluid profile-img" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">ABOUT ME</p>
+        <h2>Turning Ideas Into Functional Web Solutions</h2>
+      </div>
+
+      <div class="row align-items-center mt-5 gy-4">
+        <div class="col-lg-6" data-aos="fade-right">
+          <div class="glass-card about-card">
+            <h3>Who I Am</h3>
+            <p>
+              I am a Python Full-Stack Developer with hands-on experience in
+              Django, JavaScript, Bootstrap, REST APIs, and MySQL.
+            </p>
+            <p>
+              I enjoy building modern, responsive, and user-focused applications
+              like finance trackers, inventory systems, dashboards, and portfolio websites.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-left">
+          <div class="row g-3">
+            <div class="col-md-6">
+              <div class="glass-card info-card">
+                <i class="fa-solid fa-code"></i>
+                <h4>Frontend</h4>
+                <p>HTML, CSS, JavaScript, Bootstrap</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card info-card">
+                <i class="fa-solid fa-server"></i>
+                <h4>Backend</h4>
+                <p>Python, Django, REST API</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card info-card">
+                <i class="fa-solid fa-database"></i>
+                <h4>Database</h4>
+                <p>MySQL, SQL, CRUD, Relations</p>
+              </div>
+            </div>
+            <div class="col-md-6">
+              <div class="glass-card info-card">
+                <i class="fa-solid fa-rocket"></i>
+                <h4>Focus</h4>
+                <p>Freelancing and real-world web solutions</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">MY SKILLS</p>
+        <h2>Technologies I Work With</h2>
+      </div>
+
+      <div class="row mt-5 g-4">
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in">
+          <div class="glass-card skill-box">
+            <h4>Frontend</h4>
+            <ul>
+              <li>HTML5</li>
+              <li>CSS3</li>
+              <li>JavaScript</li>
+              <li>Bootstrap</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="100">
+          <div class="glass-card skill-box">
+            <h4>Backend</h4>
+            <ul>
+              <li>Python</li>
+              <li>Django</li>
+              <li>Django REST Framework</li>
+              <li>Authentication</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="200">
+          <div class="glass-card skill-box">
+            <h4>Database</h4>
+            <ul>
+              <li>MySQL</li>
+              <li>SQL</li>
+              <li>CRUD Operations</li>
+              <li>DB Design</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="zoom-in" data-aos-delay="300">
+          <div class="glass-card skill-box">
+            <h4>Tools</h4>
+            <ul>
+              <li>Git & GitHub</li>
+              <li>Postman</li>
+              <li>VS Code</li>
+              <li>Deployment Basics</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">FEATURED PROJECTS</p>
+        <h2>Recent Work That Shows My Skills</h2>
+      </div>
+
+      <div class="project-filter text-center mt-4" data-aos="fade-up">
+        <button class="filter-btn active" data-filter="all">All</button>
+        <button class="filter-btn" data-filter="django">Django</button>
+        <button class="filter-btn" data-filter="react">React</button>
+        <button class="filter-btn" data-filter="api">API</button>
+      </div>
+
+      <div class="row mt-5 g-4 project-wrapper">
+
+        <div class="col-md-6 col-lg-4 project-item django api" data-aos="fade-up">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <img src="images/project1.jpg" alt="Finance Tracker" class="img-fluid" />
+            </div>
+            <div class="project-content">
+              <h4>Finance Tracker</h4>
+              <p>Manage income, expenses, budgets and reports in a clean dashboard.</p>
+              <div class="tech-stack">
+                <span>Django</span>
+                <span>Bootstrap</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+                <button
+                  class="project-modal-btn"
+                  data-title="Finance Tracker"
+                  data-image="images/project1.jpg"
+                  data-description="A finance management web app that helps users track daily expenses, income, category-wise budgeting, and summary reports in a clean dashboard."
+                  data-tech="Django, Bootstrap, MySQL"
+                  data-features="Income & Expense Tracking, Dashboard Analytics, Category-wise Budgeting, Monthly Reports"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item django" data-aos="fade-up" data-aos-delay="100">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <img src="images/project2.jpg" alt="Inventory Management" class="img-fluid" />
+            </div>
+            <div class="project-content">
+              <h4>Inventory Management</h4>
+              <p>Stock management system for small businesses with alerts and CSV support.</p>
+              <div class="tech-stack">
+                <span>Django</span>
+                <span>HTML</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+                <button
+                  class="project-modal-btn"
+                  data-title="Inventory Management System"
+                  data-image="images/project2.jpg"
+                  data-description="A complete inventory system to manage products, stock levels, low-stock alerts, CSV import/export, and role-based access."
+                  data-tech="Django, HTML, CSS, Bootstrap, MySQL"
+                  data-features="CRUD Products, Low-stock Alerts, CSV Import/Export, Role-based Access"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-4 project-item react api" data-aos="fade-up" data-aos-delay="200">
+          <div class="glass-card project-card">
+            <div class="project-img">
+              <img src="images/project3.jpg" alt="Resume Management System" class="img-fluid" />
+            </div>
+            <div class="project-content">
+              <h4>Resume Management</h4>
+              <p>Candidate resume submission and admin review platform with auth and emails.</p>
+              <div class="tech-stack">
+                <span>React</span>
+                <span>Node</span>
+                <span>MySQL</span>
+              </div>
+              <div class="project-links">
+                <a href="#" target="_blank">GitHub</a>
+                <a href="#" target="_blank">Live Demo</a>
+                <button
+                  class="project-modal-btn"
+                  data-title="Resume Management System"
+                  data-image="images/project3.jpg"
+                  data-description="A resume submission platform where candidates upload resumes and admin reviews profiles with email communication."
+                  data-tech="React, Node.js, Express, MySQL, JWT, Multer, NodeMailer"
+                  data-features="Candidate Upload, Admin Panel, JWT Auth, Email Notifications"
+                >
+                  Details
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">SERVICES</p>
+        <h2>What I Can Do For Clients</h2>
+      </div>
+
+      <div class="row mt-5 g-4">
+        <div class="col-md-6 col-lg-3" data-aos="flip-left">
+          <div class="glass-card service-card">
+            <i class="fa-solid fa-laptop-code"></i>
+            <h4>Website Development</h4>
+            <p>Responsive and modern websites for businesses and personal brands.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="100">
+          <div class="glass-card service-card">
+            <i class="fa-solid fa-gears"></i>
+            <h4>Django Development</h4>
+            <p>Admin panels, dashboards, and database-driven web applications.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="200">
+          <div class="glass-card service-card">
+            <i class="fa-solid fa-plug-circle-bolt"></i>
+            <h4>REST API</h4>
+            <p>Secure API development with authentication and clean architecture.</p>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-3" data-aos="flip-left" data-aos-delay="300">
+          <div class="glass-card service-card">
+            <i class="fa-solid fa-screwdriver-wrench"></i>
+            <h4>Bug Fixing</h4>
+            <p>Frontend, backend, and database issue solving with clean code fixes.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience -->
+  <section id="experience" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">EXPERIENCE</p>
+        <h2>My Journey So Far</h2>
+      </div>
+
+      <div class="timeline mt-5">
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <h4>Python Full-Stack Developer</h4>
+            <p class="timeline-date">Recent</p>
+            <p>Built web apps using Python, Django, JavaScript, Bootstrap, MySQL, and REST APIs.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-left">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <h4>Freelance Preparation</h4>
+            <p class="timeline-date">Ongoing</p>
+            <p>Improving portfolio, project quality, UI design, and service-focused presentation.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item" data-aos="fade-right">
+          <div class="timeline-dot"></div>
+          <div class="glass-card timeline-content">
+            <h4>Hands-on Project Practice</h4>
+            <p class="timeline-date">Learning by Building</p>
+            <p>Created finance trackers, inventory systems, resume platforms, weather apps, and APIs.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section-space">
+    <div class="container">
+      <div class="section-title text-center" data-aos="fade-up">
+        <p class="section-tag">CONTACT</p>
+        <h2>Let's Build Something Great Together</h2>
+      </div>
+
+      <div class="row mt-5 gy-4">
+        <div class="col-lg-5" data-aos="fade-right">
+          <div class="glass-card contact-info-card">
+            <h3>Get In Touch</h3>
+            <p>
+              I am available for freelance work, collaborations,
+              internship opportunities, and project discussions.
+            </p>
+
+            <div class="contact-item">
+              <i class="fa-solid fa-envelope"></i>
+              <span>yourmail@example.com</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-phone"></i>
+              <span>+91 XXXXX XXXXX</span>
+            </div>
+            <div class="contact-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <span>Maharashtra, India</span>
+            </div>
+
+            <div class="social-links mt-4">
+              <a href="#"><i class="fa-brands fa-github"></i></a>
+              <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+              <a href="#"><i class="fa-brands fa-instagram"></i></a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-7" data-aos="fade-left">
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="row g-3">
+                <div class="col-md-6">
+                  <input type="text" name="from_name" class="form-control custom-input" placeholder="Your Name" required />
+                </div>
+                <div class="col-md-6">
+                  <input type="email" name="from_email" class="form-control custom-input" placeholder="Your Email" required />
+                </div>
+                <div class="col-12">
+                  <input type="text" name="subject" class="form-control custom-input" placeholder="Subject" required />
+                </div>
+                <div class="col-12">
+                  <textarea name="message" rows="6" class="form-control custom-input" placeholder="Your Message" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn custom-btn w-100" id="sendBtn">Send Message</button>
+                </div>
+                <p id="form-message" class="form-status mt-3 mb-0"></p>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer-section">
+    <div class="container text-center">
+      <p>© 2026 Shubham Powar | Built with passion by <span>Shubham</span></p>
+    </div>
+  </footer>
+
+  <button id="backToTop">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <!-- Project Modal -->
+  <div class="project-modal" id="projectModal">
+    <div class="project-modal-content glass-card">
+      <button class="project-modal-close" id="closeProjectModal">
+        <i class="fa-solid fa-xmark"></i>
+      </button>
+
+      <div class="row g-4 align-items-center">
+        <div class="col-lg-6">
+          <img id="modalProjectImage" src="" alt="Project Preview" class="img-fluid modal-project-img" />
+        </div>
+        <div class="col-lg-6">
+          <h3 id="modalProjectTitle"></h3>
+          <p id="modalProjectDescription"></p>
+
+          <div class="modal-info-block">
+            <h5>Tech Stack</h5>
+            <p id="modalProjectTech"></p>
+          </div>
+
+          <div class="modal-info-block">
+            <h5>Key Features</h5>
+            <p id="modalProjectFeatures"></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+
+  <!-- EmailJS -->
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
+  <script src="./script.js"></script>
+</body>
+</html>

@@ -1,3 +1,4 @@
+
 // Loader
 window.addEventListener("load", () => {
   const loader = document.getElementById("loader");
@@ -175,7 +176,7 @@ document.addEventListener("keydown", (e) => {
 });
 
 // EmailJS setup
-emailjs.init("YOUR_PUBLIC_KEY");
+emailjs.init("0eiLR7CZwwA49njan");
 
 // Contact form
 const contactForm = document.getElementById("contact-form");
@@ -189,7 +190,7 @@ contactForm.addEventListener("submit", function (e) {
   sendBtn.disabled = true;
   formMessage.textContent = "";
 
-  emailjs.sendForm("YOUR_SERVICE_ID", "YOUR_TEMPLATE_ID", this)
+  emailjs.sendForm("service_noim5l7", "template_yr200ru", this)
     .then(() => {
       formMessage.textContent = "Message sent successfully.";
       contactForm.reset();
